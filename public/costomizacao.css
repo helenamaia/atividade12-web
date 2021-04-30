@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(163, 235, 211);
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: "Rye", cursive;
+    color: #33313b;
+    text-shadow: 2px 2px 8px #f6f5f5;
+}
+.inicial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f6f5f555;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center
+}
