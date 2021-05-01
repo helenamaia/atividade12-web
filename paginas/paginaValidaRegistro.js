@@ -7,15 +7,18 @@ module.exports = (req, res) => {
     const {nome, email, senha} = params;
     let status;
     let html;
+   
     if(nome != ''  && email != ''  && senha != '' ){
-        array.push(params);
+        const usuarios = require('./usuarios');
+        usuarios.push(params);
+       
         status = 200;
         html = template(
         'Cadastrado com sucesso', `
         <p>Você está cadastrado ${nome}</p>
         `);
         
-    
+        console.log(array);
     }else{
 
         status = 401;
